@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Wei Weather App Version 0.1.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Please follow the procedure in sequence.
 
-In the project directory, you can run:
 
-### `npm start`
+1. Clone the project file and place it on your local repository.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. In the project directory you can run  `npm install` to install all         packaged dependencies.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. In the **.env.local** file on the root directory, you can change the value of the REACT_APP_API_KEY with your api key.
 
-### `npm test`
+4. Run `npm start` on the terminal 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Typically you will open the app at [http://localhost:3000](http://localhost:3000) .It will open on a different port if port 3000 is in use.
 
-### `npm run build`
+## APP Feature
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. On first screen load, you'll not see the UI but you will be asked to enter the City in which you want to see the weather forecast.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. The App will show you the current weather forecast, and the next 4 days temperature and forecast icons.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. If you will enter an empty string, your request will never be forwarded.
 
-### `npm run eject`
+4. If you will enter an unknown city, it will show you a 404 component inside the card.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Possible Improvement
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Implement a night/dark mode feature in which it will fetch the night time forecast and change all the info into night time data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Get the geolocation of the device accessing the app and during the app first load it will show the weather forecast of that device' location.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Tech Stack and Tools Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. React JS
+2. Typescript
+3. Tailwind CSS
+4. Moment JS
+5. React Spinners
